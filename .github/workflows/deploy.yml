@@ -39,3 +39,11 @@ jobs:
           publish_branch: gh-pages
           user_name: github-actions
           user_email: github-actions@github.com
+
+      - name: Configure GitHub Pages source
+        run: |
+          curl -s -X PUT \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $GITHUB_TOKEN" \
+            https://api.github.com/repos/${GITHUB_REPOSITORY}/pages \
+            -d '{"source":{"branch":"gh-pages","path":"/"}}'
