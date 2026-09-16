@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090b0f" />
+  <meta name="description" content="Plano avançado de hipertrofia do aluno Lucas Ribeiro, organizado em cinco dias e com volume semanal equilibrado." />
+  <title>Treino de Hipertrofia — Lucas Ribeiro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"><span></span><span></span><span></span></div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Treino de Lucas Ribeiro — início">
+      <span class="brand-mark">LR</span>
+      <span class="brand-copy">HIPERTROFIA <b>INSANA</b><small>ALUNO · LUCAS RIBEIRO</small></span>
+    </a>
+    <div class="top-actions">
+      <span class="science-badge"><i></i> PROTOCOLO · LUCAS RIBEIRO</span>
+      <button class="icon-button" id="resetButton" type="button" title="Limpar treino do dia" aria-label="Limpar treino do dia">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.34 5.66M20 4v7h-7"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">PLANO DE LUCAS RIBEIRO • 5 DIAS</p>
+        <h1>Treine pesado.<br><em>Recupere melhor.</em></h1>
+        <p class="hero-text">Divisão avançada para hipertrofia máxima, com aparelhos estáveis, execução controlada e técnicas intensificadoras seguras para quem treina sozinho.</p>
+      </div>
+      <div class="hero-metrics reveal delay-1" aria-label="Resumo do protocolo">
+        <div><strong>5</strong><span>dias de treino</span></div>
+        <div><strong>2×</strong><span>cada músculo</span></div>
+        <div><strong>16–20</strong><span>séries estimulantes</span></div>
+      </div>
+    </section>
+
+    <section class="week-section" aria-labelledby="weekTitle">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">SUA DIVISÃO</p>
+          <h2 id="weekTitle">Escolha o dia</h2>
+        </div>
+        <p id="weekVolume" class="muted"></p>
+      </div>
+      <nav class="day-tabs" id="dayTabs" aria-label="Dias da semana"></nav>
+      <div class="muscle-summary weekly-summary" aria-label="Volume semanal planejado">
+        <span class="muscle-pill"><b>Peito</b> · 20 diretas</span>
+        <span class="muscle-pill"><b>Costas</b> · 20 diretas</span>
+        <span class="muscle-pill"><b>Ombros</b> · 15–17 efetivas</span>
+        <span class="muscle-pill"><b>Tríceps</b> · 15–17 efetivas</span>
+        <span class="muscle-pill"><b>Bíceps</b> · 17–19 efetivas</span>
+        <span class="muscle-pill"><b>Trapézio</b> · 15–17 efetivas</span>
+        <span class="muscle-pill"><b>Pernas</b> · 16–20 por região</span>
+      </div>
+    </section>
+
+    <section class="session reveal" aria-live="polite">
+      <div class="session-header">
+        <div>
+          <div class="day-label" id="dayLabel"></div>
+          <h2 id="sessionTitle"></h2>
+          <p id="sessionSubtitle"></p>
+        </div>
+        <div class="session-score">
+          <span id="progressText">0%</span>
+          <small>CONCLUÍDO</small>
+        </div>
+      </div>
+      <div class="progress-track"><span id="progressBar"></span></div>
+      <div class="muscle-summary" id="muscleSummary"></div>
+
+      <div class="exercise-list" id="exerciseList"></div>
+
+      <aside class="intensity-note" id="intensityNote">
+        <div class="note-icon">!</div>
+        <div>
+          <strong>Insano não significa volume sem limite.</strong>
+          <p>Se a carga ou as repetições caírem mais de 10% mantendo a execução, encerre o músculo naquele dia. Qualidade das séries efetivas vence volume inútil.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="method" id="metodo">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">COMO EXECUTAR</p>
+          <h2>As regras que fazem crescer</h2>
+        </div>
+      </div>
+      <div class="rule-grid">
+        <article><span>01</span><h3>Progressão dupla</h3><p>Chegou ao topo das repetições em todas as séries? Suba 2,5–5% na próxima sessão.</p></article>
+        <article><span>02</span><h3>Falha estratégica</h3><p>Compostos em RIR 1–2. Falha técnica apenas na última série segura de máquinas e cabos.</p></article>
+        <article><span>03</span><h3>Amplitude com tensão</h3><p>Controle a fase excêntrica por 2–3 segundos e explore o alongamento sem perder posição articular.</p></article>
+        <article><span>04</span><h3>Descanso real</h3><p>Descanse 2–3 min nos exercícios pesados e 60–90 s nos isoladores para preservar desempenho.</p></article>
+      </div>
+    </section>
+
+    <section class="evidence" id="evidencias">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">BASE CIENTÍFICA</p>
+          <h2>Por que estes exercícios?</h2>
+        </div>
+      </div>
+      <div class="evidence-grid">
+        <a href="https://pubmed.ncbi.nlm.nih.gov/37582807/" target="_blank" rel="noreferrer"><b>Máquinas × pesos livres</b><span>Hipertrofia semelhante; máquinas facilitam estabilidade e proximidade da falha.</span></a>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/41646176/" target="_blank" rel="noreferrer"><b>Comprimento muscular</b><span>Treinar em posições mais alongadas pode favorecer a hipertrofia.</span></a>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/36334240/" target="_blank" rel="noreferrer"><b>Proximidade da falha</b><span>Falhar sempre não é superior; séries próximas da falha entregam ótimo estímulo.</span></a>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/39205815/" target="_blank" rel="noreferrer"><b>Intervalo entre séries</b><span>Descansos acima de 60 s apresentam pequena vantagem hipertrófica.</span></a>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/39593476/" target="_blank" rel="noreferrer"><b>Aquecimento específico</b><span>Séries progressivas preparam o movimento preservando energia para o treino principal.</span></a>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/35291645/" target="_blank" rel="noreferrer"><b>Volume semanal</b><span>Em treinados, 12–20 séries semanais por músculo formam uma faixa prática; séries indiretas também entram no controle da fadiga.</span></a>
+      </div>
+      <p class="disclaimer">Plano para praticante avançado e saudável. Dor articular, dor lombar ou perda de controle encerram a série. Ajuste cargas e exercícios com um profissional presencial quando necessário.</p>
+    </section>
+  </main>
+
+  <footer><span>LUCAS RIBEIRO · HIPERTROFIA INSANA</span><p>Consistência brutal. Execução inteligente.</p></footer>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>

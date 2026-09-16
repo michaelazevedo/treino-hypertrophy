@@ -1,9 +1,0 @@
-{
-  "name": "treino-hipertrophy",
-  "private": true,
-  "scripts": {
-    "dev": "cd projeto-hipertrofia && npm run dev -- --host 0.0.0.0",
-    "build": "cd projeto-hipertrofia && npm run build",
-    "preview": "cd projeto-hipertrofia && npm run preview"
-  }
-}
