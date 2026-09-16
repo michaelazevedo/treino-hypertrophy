@@ -26,7 +26,12 @@
     </div>
   </header>
 
-  <main id="top">
+  <nav class="primary-nav" aria-label="Áreas do acompanhamento">
+    <button class="primary-tab active" type="button" data-view-target="treino"><span>01</span> TREINO</button>
+    <button class="primary-tab" type="button" data-view-target="dieta"><span>02</span> DIETA</button>
+  </nav>
+
+  <main id="top" class="view active" data-view="treino">
     <section class="hero">
       <div class="hero-copy reveal">
         <p class="eyebrow">PLANO DE LUCAS RIBEIRO • 5 DIAS</p>
@@ -117,6 +122,51 @@
         <a href="https://pubmed.ncbi.nlm.nih.gov/35291645/" target="_blank" rel="noreferrer"><b>Volume semanal</b><span>Em treinados, 12–20 séries semanais por músculo formam uma faixa prática; séries indiretas também entram no controle da fadiga.</span></a>
       </div>
       <p class="disclaimer">Plano para praticante avançado e saudável. Dor articular, dor lombar ou perda de controle encerram a série. Ajuste cargas e exercícios com um profissional presencial quando necessário.</p>
+    </section>
+  </main>
+
+  <main class="view diet-view" data-view="dieta">
+    <section class="diet-hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">PLANO NUTRICIONAL · LUCAS RIBEIRO</p>
+        <h1>Coma com propósito.<br><em>Acompanhe o resultado.</em></h1>
+        <p class="hero-text">Marque cada alimento consumido. O painel soma calorias e nutrientes em tempo real e mostra exatamente o que ainda falta para fechar o dia.</p>
+      </div>
+      <div class="diet-date-card">
+        <span>ACOMPANHAMENTO DE HOJE</span>
+        <strong id="dietDate"></strong>
+        <small>O progresso é salvo automaticamente neste dispositivo.</small>
+      </div>
+    </section>
+
+    <section class="nutrition-dashboard" aria-label="Resumo nutricional diário">
+      <div class="calorie-ring" id="calorieRing">
+        <div><strong id="caloriesConsumed">0</strong><span>kcal ingeridas</span><small><b id="caloriesRemaining">2701</b> kcal restantes</small></div>
+      </div>
+      <div class="macro-overview" id="macroOverview"></div>
+      <div class="diet-actions">
+        <div><span id="foodProgress">0 de 29 itens</span><strong id="dietProgress">0% concluído</strong></div>
+        <button id="resetDietButton" type="button">REINICIAR O DIA</button>
+      </div>
+    </section>
+
+    <section class="diet-content">
+      <div class="section-head">
+        <div><p class="eyebrow">ROTINA ALIMENTAR</p><h2>Refeições do dia</h2></div>
+        <p class="muted">Escolha o alimento principal ou sua alternativa equivalente.</p>
+      </div>
+      <div class="meal-list" id="mealList"></div>
+    </section>
+
+    <section class="diet-insights">
+      <div class="section-head"><div><p class="eyebrow">LEITURA RÁPIDA</p><h2>Informações úteis</h2></div></div>
+      <div class="insight-grid">
+        <article><span>PROTEÍNA</span><strong>~2,4 g/kg</strong><p>Estimativa baseada em 89 kg. Distribuída nas cinco refeições para facilitar o consumo diário.</p></article>
+        <article><span>FIBRAS</span><strong>~33 g</strong><p>Faixa diária adequada para a maioria dos adultos. Água suficiente ajuda na tolerância.</p></article>
+        <article><span>DISTRIBUIÇÃO</span><strong>5 refeições</strong><p>Intervalos regulares, com carboidrato e proteína próximos ao treino.</p></article>
+        <article><span>PRECISÃO</span><strong>Valores estimados</strong><p>Marcas, cortes e métodos de preparo mudam os números. O rótulo do produto sempre prevalece.</p></article>
+      </div>
+      <p class="disclaimer">Transcrição do plano alimentar fornecido. Os cálculos usam valores médios de tabelas de composição e não substituem o acompanhamento da nutricionista responsável.</p>
     </section>
   </main>
 
